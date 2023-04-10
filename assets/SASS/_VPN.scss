@@ -1,0 +1,28 @@
+@import "./variables";
+#vpn{
+    padding: 70px 0;
+    .vpn_section{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: center;
+        text-align: center;
+    }
+    h1{
+        width: 384px;
+        @media (max-width:400px) {
+            width: 95%;
+        }
+    }
+    h6{
+        width: 555px;
+        padding-bottom: 155px;
+        @media (max-width:600px) {
+            width: 95%;
+            padding-bottom: 50px;
+        }
+    }
+    img{
+        width: 95%;
+    }
+}

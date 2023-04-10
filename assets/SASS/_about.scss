@@ -1,0 +1,46 @@
+@import "./variables";
+#about{
+    .about_section{
+        display: flex;
+        justify-content: space-around;
+        @media (max-width:640px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .about_box{
+        display: flex;
+        align-items: center;
+        gap: 36px;
+        padding: 67px 0;
+        h1{
+            font-size: 1.8rem;
+            font-weight: 700;
+            line-height: 30px;
+        }
+        h2{
+            font-size: 1.4rem;
+            font-weight: 400;
+            color: $extraTextColor;
+        }
+    }
+    .about_after::after{
+        content: "";
+        width: 1px;
+        height: 126px;
+        background-color: #EEEFF2;
+        margin: 0 130px;
+        @media (max-width:1150px) {
+            margin: 0 100px;
+        }
+        @media (max-width:1000px) {
+            margin: 0 50px;
+        }
+        @media (max-width:800px) {
+            margin: 0 10px;
+        }
+        @media (max-width:800px) {
+            display: none;
+        }
+    }
+}

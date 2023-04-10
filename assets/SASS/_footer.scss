@@ -1,0 +1,63 @@
+@import "./variables";
+#footer{
+    background-color: #F8F8F8;
+    padding: 180px 0 100px;
+    margin-top: 181px;
+    .footer_section{
+        display: flex;
+        justify-content: center;
+        gap: 126px;
+        flex-wrap: wrap;
+    }
+    .footer_box{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: start;
+        h6{
+            width: 340px;
+            @media (max-width:400px) {
+                width: 100%;
+            }
+        }
+    }
+    .footer_logo{
+        display: flex;
+        gap: 20px;
+    }
+    .fa-brands{
+        border-radius: 50%;
+        padding: 10px 12px;
+        color: $mainTextColor;
+        background-color: $bodybgColor;
+        &:hover{
+            box-shadow: 0 0 15px 5px $borderColor;
+            transition: all .6s ease-in-out;
+            color: $buttonbgColor;
+        }
+    }
+    p{
+        color: #AFB5C0;
+        span{
+            font-weight: 500;
+        }
+    }
+    h1{
+        font-size: 1.25rem;
+        font-weight: 500;
+        line-height: 30px;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    a{
+        font-size: 1.15rem;
+        color: $extraTextColor;
+        &:hover{
+            color: $buttonbgColor;
+            transition: all .6s;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+#logo{
+    padding: 50px 0;
+    .logo_section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 48px;
+        flex-wrap: wrap;
+    }
+}

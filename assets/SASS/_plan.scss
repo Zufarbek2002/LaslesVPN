@@ -1,0 +1,84 @@
+@import "./variables";
+#plan{
+    padding: 80px 0;
+    background-image: linear-gradient(to bottom, #e5e5e557, #fff);
+    .plan_section{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    h6{
+        width: 555px;
+        text-align: center;
+        @media (max-width:600px) {
+            width: 95%;
+        }
+    }
+    .plan_boxes{
+        display: flex;
+        gap: 50px;
+        @media (max-width:1110px) {
+            flex-direction: column;
+        }
+        @media (max-width:350px) {
+            width: 100%;
+        }
+    }
+    .plan_box{
+        background-color: $bodybgColor;
+        border: 2px solid $borderColor;
+        border-radius: 10px;
+        padding: 50px 70px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        text-align: center;
+        color: $mainTextColor;
+        &:hover{
+            border: 2px solid $buttonbgColor;
+            box-shadow: 0 0 10px 10px $borderColor;
+            transition: all .6s ease-in-out;
+        }
+        @media (max-width:350px) {
+            width: 95%;
+        }
+        
+    }
+    h2{
+        font-size: 1.25rem;
+        font-weight: 500;
+
+    }
+    h1{
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 30px;
+        margin-top: 150px;
+    }
+    .box_two{
+        margin-top: 100px;
+    }
+    .box_two_span{
+        color: $extraTextColor;
+        font-size: 1.8rem;
+        font-weight: 400;
+    }
+    .box_three{
+        margin-top: 50px;
+    }
+    .plan_text_line{
+        display: flex;
+        gap: 25px;
+        align-items: center;
+    }
+    .plan_btns{
+        border: 2px solid $buttonbgColor;
+        font-weight: 700;
+        font-size: 1.15rem;
+        width: 177px;
+        padding: 13px 0;
+        margin-top: 0px;
+        border-radius: 50px;
+    }
+}
